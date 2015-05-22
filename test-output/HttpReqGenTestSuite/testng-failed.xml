@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HttpReqGenTestSuite]" parallel="none">
+  <parameter name="workBook" value="D:/testdata/Http_Request_Workbook_Data.xlsx"/>
+  <test name="HttpReqGenTest(failed)" parallel="none">
+    <classes>
+      <class name="com.demo.qa.rest_api_test.HTTPReqGenTest">
+        <methods>
+          <include name="api_test" invocation-numbers="0 1 2"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.demo.qa.rest_api_test.HTTPReqGenTest -->
+    </classes>
+  </test> <!-- HttpReqGenTest(failed) -->
+</suite> <!-- Failed suite [HttpReqGenTestSuite] -->

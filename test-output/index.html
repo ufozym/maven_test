@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-HttpReqGenTestSuite">
+              <span class="suite-name border-passed">HttpReqGenTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-HttpReqGenTestSuite">
+                    <span>D:\workspaces\maven_test\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-HttpReqGenTestSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-HttpReqGenTestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-HttpReqGenTestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-HttpReqGenTestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-HttpReqGenTestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-HttpReqGenTestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-HttpReqGenTestSuite" class="hide-methods passed suite-HttpReqGenTestSuite"> (hide)</a> <!-- hide-methods passed suite-HttpReqGenTestSuite -->
+                      <a href="#" panel-name="suite-HttpReqGenTestSuite" class="show-methods passed suite-HttpReqGenTestSuite"> (show)</a> <!-- show-methods passed suite-HttpReqGenTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-HttpReqGenTestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HttpReqGenTestSuite" title="com.demo.qa.rest_api_test.HTTPReqGenTest" hash-for-method="api_test(2, bb)">api_test(2, bb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HttpReqGenTestSuite" title="com.demo.qa.rest_api_test.HTTPReqGenTest" hash-for-method="api_test(3, cc)">api_test(3, cc)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HttpReqGenTestSuite" title="com.demo.qa.rest_api_test.HTTPReqGenTest" hash-for-method="api_test(1, aa)">api_test(1, aa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-HttpReqGenTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-HttpReqGenTestSuite" class="panel HttpReqGenTestSuite">
+          <div class="suite-HttpReqGenTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.qa.rest_api_test.HTTPReqGenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="api_test(2, bb)">
+                  </a> <!-- api_test(2, bb) -->
+                  <span class="method-name">api_test</span>
+                  <span class="parameters">(2, bb)</span>
+                  <em>
+(ReqGenTest)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="api_test(3, cc)">
+                  </a> <!-- api_test(3, cc) -->
+                  <span class="method-name">api_test</span>
+                  <span class="parameters">(3, cc)</span>
+                  <em>
+(ReqGenTest)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="api_test(1, aa)">
+                  </a> <!-- api_test(1, aa) -->
+                  <span class="method-name">api_test</span>
+                  <span class="parameters">(1, aa)</span>
+                  <em>
+(ReqGenTest)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HttpReqGenTestSuite-class-passed -->
+        </div> <!-- panel HttpReqGenTestSuite -->
+        <div panel-name="test-xml-HttpReqGenTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\workspaces\maven_test\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;HttpReqGenTestSuite&quot; parallel=&quot;none&quot;&gt;
+  &lt;parameter name=&quot;workBook&quot; value=&quot;D:/testdata/Http_Request_Workbook_Data.xlsx&quot;/&gt;
+  &lt;test name=&quot;HttpReqGenTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demo.qa.rest_api_test.HTTPReqGenTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HttpReqGenTest --&gt;
+&lt;/suite&gt; &lt;!-- HttpReqGenTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-HttpReqGenTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for HttpReqGenTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">HttpReqGenTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-HttpReqGenTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for HttpReqGenTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-HttpReqGenTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for HttpReqGenTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_HttpReqGenTestSuite');
+function tableData_HttpReqGenTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'api_test')
+data.setCell(0, 2, 'com.demo.qa.rest_api_test.HTTPReqGenTest')
+data.setCell(0, 3, 911);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'api_test')
+data.setCell(1, 2, 'com.demo.qa.rest_api_test.HTTPReqGenTest')
+data.setCell(1, 3, 37);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'api_test')
+data.setCell(2, 2, 'com.demo.qa.rest_api_test.HTTPReqGenTest')
+data.setCell(2, 3, 30);
+window.suiteTableData['HttpReqGenTestSuite']= { tableData: data, tableDiv: 'times-div-HttpReqGenTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 978 ms</span>
+              <div id="times-div-HttpReqGenTestSuite">
+              </div> <!-- times-div-HttpReqGenTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-HttpReqGenTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for HttpReqGenTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-HttpReqGenTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-HttpReqGenTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.qa.rest_api_test.HTTPReqGenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(D:/testdata/Http_Request_Workbook_Data.xlsx)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">api_test(1, aa)</span>
+                <span class="method-start">485 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">api_test(2, bb)</span>
+                <span class="method-start">1397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">api_test(3, cc)</span>
+                <span class="method-start">1428 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">1467 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
