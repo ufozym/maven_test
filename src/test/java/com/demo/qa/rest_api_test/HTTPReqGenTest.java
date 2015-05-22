@@ -122,6 +122,7 @@ public class HTTPReqGenTest implements ITest {
         return test_IDs.iterator();
     }
     
+    /*
     @Test(dataProvider = "WorkBookData", description = "ReqGenTest")
     public void api_test(String ID, String test_case) {
         
@@ -227,6 +228,74 @@ public class HTTPReqGenTest implements ITest {
                 DataWriter.writeData(resultSheet, "false", ID, test_case);
                 failedcase++;
             }
+        }
+    }
+    */
+    
+    
+    @Test(dataProvider = "WorkBookData", description = "ReqGenTest")
+    public void api_test(String ID, String test_case) {
+        
+        HTTPReqGen myReqGen = new HTTPReqGen();
+        
+        try {
+            // myReqGen.generate_request(template, myInputData.get_record(ID));
+            myReqGen.generate_request(myInputData.get_record(ID));
+            response = myReqGen.perform_request();
+        } catch (Exception e) {
+            Assert.fail("Problem using HTTPRequestGenerator to generate response: "
+                    + e.getMessage());
+        }
+        
+        String baseline_message = myBaselineData.get_record(ID).get("Response");
+            
+        
+        if (response.statusCode() == 200) {
+            
+            try {
+                
+                String responsedecode = java.net.URLDecoder.decode(response.asString(),
+                                                                   "utf-8");
+              
+                int index = responsedecode.indexOf(baseline_message);
+                
+                if( index == -1){
+                    
+                    System.out.println("Fail!!!!!!!! result != expect");
+                    DataWriter.writeData(resultSheet, "Fail", ID, test_case);
+                    failedcase++;
+                } else {
+                    System.out.println("Success!!!!!!! result == expect");
+                    DataWriter.writeData(resultSheet, "Pass", ID, test_case);
+                }
+            } catch (Exception e) {
+                DataWriter.writeData(resultSheet, "Error", ID, test_case);
+                failedcase++;
+                Assert.fail("Problem to assert Response and baseline messages: "
+                        + e.getMessage());
+            } 
+        } else {
+            
+            try {
+                String responsedecode = java.net.URLDecoder.decode(response.asString(),
+                        "utf-8");
+                
+                DataWriter.writeData(outputSheet,
+                                     response.statusLine(),
+                                     ID,
+                                     test_case);
+                if ( responsedecode.indexOf(baseline_message)!=-1 ) {
+                    DataWriter.writeData(resultSheet, "Pass", ID, test_case);
+                } else {
+                    DataWriter.writeData(resultSheet, "Fail", ID, test_case);
+                    failedcase++;
+                }
+                
+            } catch (UnsupportedEncodingException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+           
         }
     }
     

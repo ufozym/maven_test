@@ -290,13 +290,13 @@ public class HTTPReqGen {
             if (QConstant.BODYS[i] == "Body"
                     && !"".equals(record.get(QConstant.BODYS[i]))
                     && record.get(QConstant.BODYS[i]) != null) {
-                System.out.println("Step 111111111111");
+              //  System.out.println("Step 111111111111");
                 bodytemp = record.get(QConstant.BODYS[i]);
                 break;
             } else if (!"".equals(record.get(QConstant.BODYS[i]))
                     && record.get(QConstant.BODYS[i]) != null) {
                 // 如果没有Body列，用其他字段列拼成EData，json格式
-                System.out.println("Step 2222222222222");
+               // System.out.println("Step 2222222222222");
                 if (QConstant.BODYS[i] == "Version"
                         || QConstant.BODYS[i] == "CommitTime"
                         || QConstant.BODYS[i] == "CoName"
